@@ -18,7 +18,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/addcontact" element={<NewContacts />} />
           <Route path="/contacts" element={<ViewContacts />} />
-          <Route path="/*" element={<ErrorPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </store.Provider>
