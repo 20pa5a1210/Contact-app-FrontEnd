@@ -4,7 +4,7 @@ import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 import LogoutModal from "./LogoutModal";
 export default function Dashboard() {
-  const [token, setToken] = useContext(store);
+  const [token] = useContext(store);
   const [data, setData] = useState(null);
   const [openModal, setOpenModal] = useState(false);
 

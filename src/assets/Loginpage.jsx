@@ -5,11 +5,7 @@ import { store } from "../App";
 import { useContext } from "react";
 export default function Loginpage() {
   const [token, setToken] = useContext(store);
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     axios
       .post("https://contact-app-backe.herokuapp.com/login", data)
@@ -85,7 +81,7 @@ export default function Loginpage() {
           </div>
 
           <div className="flex items-center justify-between">
-            <div className="flex items-center">
+            <div className=" items-center hidden">
               <input
                 id="remember-me"
                 name="remember-me"
